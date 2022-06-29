@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14 px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* ----------------       HEADER     -----------------------*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 13px;
+  height: 48px;
+  padding: 6px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin-left: 14px;
+  cursor: grab;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+header .dotted {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  margin: 0 20px 0 20px;
+  opacity: 0.5;
+  cursor: grab;
+}
+
+header .dotted:hover {
+  background-color: #dad5d5;
+  border-radius: 50%;
+  cursor: grab;
+}
+
+header button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  color: white;
+  margin: 0 15px 0 0;
+  padding: 9px 23px;
+  border-radius: 4px;
+  cursor: grab;
+}
+
+header button:hover {
+  background-color: #3182ed;
+  box-shadow: 0 0 3px #1a73e8;
+}
+
+/* ----------------       LOGO     -----------------------*/
+
+.content_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+}
+
+.logo {
+  height: 92px;
+  width: auto;
+  padding: 35px 20px 12px 20px;
+}
+
+/* ----------------       SEARCH  AND BUTTONS   -----------------------*/
+
+main {
+  margin: 0 4px 120px 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .searchbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #d1d1d1d1;
+  height: 43px;
+  max-width: 560px;
+  width: 100%;
+}
+
+main .searchbar .mic {
+  width: 25px;
+  height: auto;
+  padding-right: 15px;
+  cursor: pointer;
+}
+main .searchbar .search {
+  width: 20px;
+  height: auto;
+  padding-left: 15px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+main .searchbar input {
+  border: none;
+  outline: none;
+  width: 77%;
+}
+
+main .searchbar:hover {
+  box-shadow: rgba(178, 171, 171, 0.881) 1px 1px 10px;
+}
+
+main .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+main .buttons button {
+  margin: 11px 4px;
+  padding: 10px 16px;
+  background-color: rgba(247, 241, 241, 0.692);
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: grab;
+}
+main .buttons button:hover {
+  animation: pulsation_button .9s ease-in-out;
+}
+@keyframes pulsation_button {
+  from {
+    box-shadow: 0 0px 0px #06479c;
+  }
+  to{
+    box-shadow: 0 0 30px rgb(255, 153, 0);
+  }
+}
+
+
+/* ----------------       FOOTER    -----------------------*/
+
+footer {
+  position: sticky;
+  bottom: 0;
+  color: #5c5c5c;
+  background-color: #f3f0f09e;
+}
+.footer1 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  border-bottom: 1px solid #dadce0;
+  color: #5c5c5c;
+  font-size: 15px;
+}
+
+.footer2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+
+.footer2 img {
+  width: 6%;
+  height: auto;
+}
+
+.footer2 a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+.footer2 a:hover {
+  text-decoration: underline;
+}
+
+footer nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+footer nav li {
+  padding: 15px;
+}
+footer nav ul a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+footer nav ul a:hover {
+  text-decoration: underline;
+}
